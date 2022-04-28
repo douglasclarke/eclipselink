@@ -1,0 +1,18 @@
+version: 0.1
+component: build
+timeoutInSeconds: 6000
+runAs: root
+shell: bash
+
+steps:
+
+- type: VulnerabilityAudit
+  name: "Vulnerability Audit Step"
+  configuration:
+    buildType: maven
+    pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
+    maxPermissibleCvssV2Score: 8.0
+    maxPermissibleCvssV3Score: 8.0
+  knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa5f5ialya5zvyevjy6duiqnqcqyykuqyy2lbdm5kzpyhbo7qehz7q
+  vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaag3fv6dqtnuvgpn7tg3kkjuitjs3egfcr3nlypsjc4agfn7u5prdq
+  vulnerabilityAuditName: eclipselink_build
