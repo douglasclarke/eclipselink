@@ -15,4 +15,4 @@ steps:
     maxPermissibleCvssV3Score: 8.0
   knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa5f5ialya5zvyevjy6duiqnqcqyykuqyy2lbdm5kzpyhbo7qehz7q
   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaag3fv6dqtnuvgpn7tg3kkjuitjs3egfcr3nlypsjc4agfn7u5prdq
-  vulnerabilityAuditName: eclipselink_build
+  vulnerabilityAuditName: eclipselink_build_3.0.2-RC1-RELEASE
